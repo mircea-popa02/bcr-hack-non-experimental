@@ -58,9 +58,9 @@ const HeroSection = (props) => {
     <div className={dark ? classes["section-hero-dark"] : classes["section-hero"]}>
       <div className={dark ? classes["hero-dark"] : classes.hero}>
         <div className={dark ? classes["hero-text-box-dark"] : classes["hero-text-box"]}>
-        <Link to={`/speech`} className={dark ? classes["mic-dark"] : classes["mic"]}>
+        {/* <Link to={`/speech`} className={dark ? classes["mic-dark"] : classes["mic"]}>
             <ion-icon name="mic-outline"></ion-icon>
-          </Link>
+          </Link> */}
           <div className={dark ? classes["small-container-dark"] : classes["small-container"]}>
           
             <h1 className={dark ? classes["heading-primary-dark"] : classes["heading-primary"]}>

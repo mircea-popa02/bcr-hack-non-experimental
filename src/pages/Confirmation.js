@@ -7,15 +7,15 @@ import classes from "../pages/Confirmation.module.css";
 const Confirmation = () => {
   const [userInfo, setUserInfo] = useState({});
   const [bankInfo, setBank] = useState({});
-  const [voice, setVoice] = useState("");
+  // const [voice, setVoice] = useState("");
 
   useEffect(() => {
     const items = localStorage.getItem("myTaskList");
     setUserInfo(items);
     const bank = localStorage.getItem("chosenBank");
     setBank(bank);
-    const voice = localStorage.getItem("voice");
-    setVoice(voice);
+    // const voice = localStorage.getItem("voice");
+    // setVoice(voice);
   }, []);
 
   if (typeof userInfo === "object" && !Array.isArray(userInfo)) {
@@ -32,87 +32,81 @@ const Confirmation = () => {
 
   return (
     <>
-      {!voice ? (
-        <>
-          <div className={classes.confirmation}>
-            <h1>
-              Salut,{" "}
-              {!(typeof userInfo === "object" && !Array.isArray(userInfo))
-                ? JSON.parse(userInfo).name
-                : null}
-            </h1>
-            <p>
-              {" "}
-              Programarea ta la{" "}
-              <strong>
-                {!(typeof bankInfo === "object" && !Array.isArray(bankInfo))
-                  ? JSON.parse(bankInfo).name
-                  : null}
-              </strong>{" "}
-              este confirmată.
-            </p>
+      <div className={classes.confirmation}>
+        <h1>
+          Salut,{" "}
+          {!(typeof userInfo === "object" && !Array.isArray(userInfo))
+            ? JSON.parse(userInfo).name
+            : null}
+        </h1>
+        <p>
+          {" "}
+          Programarea ta la{" "}
+          <strong>
+            {!(typeof bankInfo === "object" && !Array.isArray(bankInfo))
+              ? JSON.parse(bankInfo).name
+              : null}
+          </strong>{" "}
+          este confirmată.
+        </p>
 
-            <p>Scopul vizitei: depunere sau retragere de bani.</p>
-            <p>
-              Locația BCR aleasă:{" "}
-              <strong>
-                {!(typeof bankInfo === "object" && !Array.isArray(bankInfo))
-                  ? JSON.parse(bankInfo).address
-                  : null}
-              </strong>
-              <div className={classes.map}>
-                <MyMap latitude={44.442586} longitude={26.0513144} />
-              </div>
-            </p>
-
-            <p>
-              Vei primi un e-mail automat la adresa{" "}
-              <strong>
-                {!(typeof userInfo === "object" && !Array.isArray(userInfo))
-                  ? JSON.parse(userInfo).ownersEmail
-                  : null}
-              </strong>{" "}
-              cu mai multe detalii după confirmare.
-            </p>
-
-            <p>
-              Vă așteptăm pe data{" "}
-              <strong>
-                {!(typeof userInfo === "object" && !Array.isArray(userInfo))
-                  ? JSON.parse(userInfo).date
-                  : null}
-              </strong>
-            </p>
+        <p>Scopul vizitei: depunere sau retragere de bani.</p>
+        <p>
+          Locația BCR aleasă:{" "}
+          <strong>
+            {!(typeof bankInfo === "object" && !Array.isArray(bankInfo))
+              ? JSON.parse(bankInfo).address
+              : null}
+          </strong>
+          <div className={classes.map}>
+            <MyMap latitude={44.442586} longitude={26.0513144} />
           </div>
+        </p>
 
-          <div className={classes.confirm}>
-            <SendEmail
-              name={
-                !(typeof bankInfo === "object" && !Array.isArray(bankInfo))
-                  ? JSON.parse(bankInfo).name
-                  : null
-              }
-              address={
-                !(typeof bankInfo === "object" && !Array.isArray(bankInfo))
-                  ? JSON.parse(bankInfo).address
-                  : null
-              }
-              date={
-                !(typeof userInfo === "object" && !Array.isArray(userInfo))
-                  ? JSON.parse(userInfo).date
-                  : null
-              }
-              email={
-                !(typeof userInfo === "object" && !Array.isArray(userInfo))
-                  ? JSON.parse(userInfo).ownersEmail
-                  : null
-              }
-            />
-          </div>
-        </>
-      ) : (
-        <SendEmail name={voice.split(" ")[2]} />
-      )}
+        <p>
+          Vei primi un e-mail automat la adresa{" "}
+          <strong>
+            {!(typeof userInfo === "object" && !Array.isArray(userInfo))
+              ? JSON.parse(userInfo).ownersEmail
+              : null}
+          </strong>{" "}
+          cu mai multe detalii după confirmare.
+        </p>
+
+        <p>
+          Vă așteptăm pe data{" "}
+          <strong>
+            {!(typeof userInfo === "object" && !Array.isArray(userInfo))
+              ? JSON.parse(userInfo).date
+              : null}
+          </strong>
+        </p>
+      </div>
+
+      <div className={classes.confirm}>
+        <SendEmail
+          name={
+            !(typeof bankInfo === "object" && !Array.isArray(bankInfo))
+              ? JSON.parse(bankInfo).name
+              : null
+          }
+          address={
+            !(typeof bankInfo === "object" && !Array.isArray(bankInfo))
+              ? JSON.parse(bankInfo).address
+              : null
+          }
+          date={
+            !(typeof userInfo === "object" && !Array.isArray(userInfo))
+              ? JSON.parse(userInfo).date
+              : null
+          }
+          email={
+            !(typeof userInfo === "object" && !Array.isArray(userInfo))
+              ? JSON.parse(userInfo).ownersEmail
+              : null
+          }
+        />
+      </div>
     </>
   );
 };

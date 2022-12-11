@@ -9,7 +9,7 @@ import AuthContext from "./store/auth-context";
 import { useContext, useState, useEffect } from "react";
 import { Redirect } from "react-router-dom";
 import { storage } from "./store/firebase";
-import Speech from "./pages/Speech";
+// import Speech from "./pages/Speech";
 
 import {
   ref,
@@ -235,7 +235,7 @@ function App() {
           {/* {!authCtx.isLoggedIn && <Redirect to="/auth" />} */}
         </Route>
         <Route path="/speech">
-          {<Speech />}
+          {/* {<Speech />} */}
           {/* {!authCtx.isLoggedIn && <Redirect to="/auth" />} */}
         </Route>
         <Route path="*">
