@@ -110,25 +110,30 @@
 
 .facebook svg {
   margin-top: 1vh;
+  text-decoration: none;
 }
 
 .facebook-dark svg {
   margin-top: 1vh;
   filter: invert(1);
+  text-decoration: none;
 }
 
 
 .instagram svg {
   margin-top: 1vh;
+  text-decoration: none;
 }
 
 .instagram-dark svg {
   margin-top: 1vh;
   filter: invert(1);
+  text-decoration: none;
 }
 
 .youtube svg {
   margin-top: 1vh;
+  
 }
 
 .youtube-dark svg {
@@ -322,6 +327,7 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  padding-top: 2.5vh;
   margin-bottom: 3vh;
   font-size: 6rem;
   font-family: "Work Sans", sans-serif;
@@ -371,6 +377,11 @@
 
 @media (min-width: 768px) {
   .btn--news {
+    width: 10vw;
+    height: 5vh;
+  }
+
+  .btn--news-dark {
     width: 10vw;
     height: 5vh;
   }

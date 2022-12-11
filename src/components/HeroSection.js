@@ -58,11 +58,11 @@ const HeroSection = (props) => {
     <div className={dark ? classes["section-hero-dark"] : classes["section-hero"]}>
       <div className={dark ? classes["hero-dark"] : classes.hero}>
         <div className={dark ? classes["hero-text-box-dark"] : classes["hero-text-box"]}>
-        {/* <Link to={`/speech`} className={dark ? classes["mic-dark"] : classes["mic"]}>
+          {/* <Link to={`/speech`} className={dark ? classes["mic-dark"] : classes["mic"]}>
             <ion-icon name="mic-outline"></ion-icon>
           </Link> */}
           <div className={dark ? classes["small-container-dark"] : classes["small-container"]}>
-          
+
             <h1 className={dark ? classes["heading-primary-dark"] : classes["heading-primary"]}>
               Cu ce te putem ajuta astăzi?
             </h1>
@@ -171,7 +171,7 @@ const HeroSection = (props) => {
           </div>
 
           <div className={dark ? classes["footer-dark"] : classes["footer"]}>
-            <div className={dark ? classes["instagram-dark"] : classes ["instagram"]}>
+            <a href="https://www.instagram.com/georgepeinsta/?hl=en"><div className={dark ? classes["instagram-dark"] : classes["instagram"]}>
               Instagram
               <svg
                 width="24"
@@ -202,8 +202,9 @@ const HeroSection = (props) => {
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
-            <div className={dark ? classes["facebook-dark"] : classes["facebook"]}>
+            </div></a>
+
+            <a href="https://www.facebook.com/BCR.Romania/"><div className={dark ? classes["facebook-dark"] : classes["facebook"]}>
               Facebook
               <svg
                 width="24"
@@ -227,8 +228,9 @@ const HeroSection = (props) => {
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
-            <div className={dark ? classes["youtube-dark"] : classes["youtube"]}>
+            </div></a>
+
+            <a href="https://www.youtube.com/@BancaComercialaRomana"><div className={dark ? classes["youtube-dark"] : classes["youtube"]}>
               YouTube
               <svg
                 width="24"
@@ -254,7 +256,8 @@ const HeroSection = (props) => {
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
+            </div></a>
+
           </div>
         </div>
       </div>
