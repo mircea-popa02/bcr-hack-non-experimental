@@ -1,0 +1,120 @@
+.big-news-container {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid rgba(33, 65, 108, 0.2);
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin: auto;
+  width: 90vw;
+  flex-direction: column;
+  padding: 5vw;
+  align-items: flex-start;
+  background-color: white;
+  padding-bottom: 3vh;
+  margin-bottom: 5vh;
+}
+
+.big-news-container svg {
+  height: 3rem;
+  width: 3rem;
+  color: #21416c;
+}
+
+.wrapper {
+  background-color: white;
+  padding-bottom: 3vh;
+}
+
+.wrapper h1 {
+  color: #21416c;
+  font-weight: 500;
+  padding: 6vw;
+}
+
+.wrapper h2 {
+  color: #21416c;
+  font-weight: 500;
+}
+
+.animalName {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.big-image {
+  border: 6px solid #ccc;
+  width: 25rem;
+  height: 25rem;
+}
+
+.big-news-header {
+  color: #A2A0AC;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 2rem; */
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.firstgroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* flex-direction: column; */
+}
+
+.reward {
+  margin-left: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* font-size: 1.7rem; */
+  /* margin-bottom: 4.6rem; */
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #ffe998, #57370d);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.big-news-content {
+  color: #ccc;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.big-news-map {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  /* margin-bottom: 4rem; */
+}
+
+.btn--news2 {
+  background: #21416C;;
+  border-radius: 1rem;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1.5rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  margin-top: 2vh;
+}
+
+.big-news-text p {
+  font-size: 2rem;
+  margin-bottom: 1vh;
+}

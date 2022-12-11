@@ -1,0 +1,379 @@
+.section-hero {
+  background-color: #ffffff;
+  height: 115vh;
+}
+
+.section-hero-dark {
+  background-color: #282828;
+  height: 115vh;
+}
+
+.scrolling-wrapper-flexbox {
+  margin-top: 3vh;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.scrolling-wrapper-flexbox-dark {
+  margin-top: 3vh;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.cards-container {
+  /* width: 100vw; */
+  /* height: 38vh; */
+  background-color: #E8E7ED;
+}
+
+.cards-container-dark {
+  background-color: #484749
+}
+
+.addr-landing {
+  display: flex;
+  margin-left: 6vw;
+  width: 100vw;
+  height: 5vh;
+  margin-bottom: 1vh;
+  background-color: white;
+  color: #000;
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  color: #a2a0ac;
+  align-items: center;
+}
+
+.addr-landing-dark {
+  display: flex;
+  margin-left: 6vw;
+  width: 100vw;
+  height: 5vh;
+  margin-bottom: 1vh;
+  background-color: #282828;
+  color: #000;
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  color: #e2e1e8;
+  align-items: center;
+}
+
+.instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  color: #21416c;
+}
+
+.instagram-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  color: #e2e1e8;
+}
+
+.facebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  color: #21416c;
+}
+
+.facebook-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  color: #e2e1e8;
+}
+
+.youtube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  color: #21416c;
+}
+
+.youtube-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  color: #e2e1e8;
+}
+
+.facebook svg {
+  margin-top: 1vh;
+}
+
+.facebook-dark svg {
+  margin-top: 1vh;
+  filter: invert(1);
+}
+
+
+.instagram svg {
+  margin-top: 1vh;
+}
+
+.instagram-dark svg {
+  margin-top: 1vh;
+  filter: invert(1);
+}
+
+.youtube svg {
+  margin-top: 1vh;
+}
+
+.youtube-dark svg {
+  margin-top: 1vh;
+  filter: invert(1);
+}
+
+.addr-landing svg {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+.addr-landing-dark svg {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+.card-bcr {
+  display: flex;
+  flex: 0 0 auto;
+  background-color: white;
+  margin-left: 6vw;
+  width: 276px;
+  height: 40vh;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  padding: 2vh;
+  flex-wrap: no-wrap;
+  align-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start
+}
+
+.card-bcr-dark {
+  display: flex;
+  flex: 0 0 auto;
+  background-color: #282828;
+  margin-left: 6vw;
+  width: 276px;
+  height: 40vh;
+  /* background: #ffffff; */
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  padding: 2vh;
+  flex-wrap: no-wrap;
+  align-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start
+}
+
+.btn--news {
+  width: 25vw;
+  height: 5vh;
+  background: #21416c;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+}
+
+.btn--news-dark {
+  width: 25vw;
+  height: 5vh;
+  background: #BEE5FA;
+  
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+}
+
+.btn--news-2 {
+  width: 25vw;
+  height: 5vh;
+  background: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+}
+
+.btn--news-2-dark {
+  width: 25vw;
+  height: 5vh;
+  background: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+}
+
+.mic {
+  opacity: 0;
+  z-index: 999;
+}
+
+.mic-dark {
+  opacity: 0;
+  z-index: 999;
+}
+
+.btn--news div {
+  color: white;
+  margin: auto;
+  text-align: center;
+  display: table;
+  margin:auto; 
+}
+
+.btn--news-dark div {
+  color: #282828;
+  margin: auto;
+  text-align: center;
+  display: table;
+  margin:auto; 
+}
+
+
+.card-bcr h2 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 115%;
+  letter-spacing: -0.41px;
+  color: #21416c;
+}
+
+.card-bcr-dark h2 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 115%;
+  letter-spacing: -0.41px;
+  color: #e2e1e8;
+}
+
+.card-bcr p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  /* or 164% */
+
+  letter-spacing: -0.41px;
+
+  color: #a2a0ac;
+}
+
+.card-bcr-dark p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: -0.41px;
+  color: #a2a0ac;
+}
+
+.heading-primary {
+  font-size: 4.6rem;
+  margin-bottom: 4.6rem;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 3vh;
+  font-size: 6rem;
+  font-family: "Work Sans", sans-serif;
+  margin-left: 6vw;
+  font-family: "Work Sans";
+  font-weight: 200;
+  margin-bottom: 2vh;
+  background-color: #282828;
+}
+
+.heading-primary-dark {
+  font-size: 4.6rem;
+  margin-bottom: 4.6rem;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 3vh;
+  font-size: 6rem;
+  font-family: "Work Sans", sans-serif;
+  margin-left: 6vw;
+  font-family: "Work Sans";
+  font-weight: 200;
+  margin-bottom: 2vh;
+  background-color: #e2e1e8;
+} 
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 30vh;
+  margin-top: 3vh;
+}
+
+.footer-dark {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 30vh;
+  margin-top: 3vh;
+}
+
+.footer svg {
+  width: 3rem;
+  height: 3rem;
+
+  color: white;
+}
+
+.footer-dark svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (min-width: 768px) {
+  .btn--news {
+    width: 10vw;
+    height: 5vh;
+  }
+
+  
+}
+

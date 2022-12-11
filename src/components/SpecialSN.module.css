@@ -1,0 +1,94 @@
+.special-container {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  padding: 2rem;
+  width: 90vw;
+  border-radius: 1rem;
+  margin: auto;
+  display: flex;
+  background: #BEE5FA;
+  border: 1px solid rgba(33, 65, 108, 0.2);
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  max-width: 70vw;
+}
+
+.special {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+  flex-direction: column
+}
+
+.specialTextbox {
+  color: #21416C;
+}
+
+.special-name {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.address-name-special {
+  margin-top: 1.5vh;
+  color: #5C7999;
+}
+
+.distance-bank {
+  display: flex;
+  font-weight: 300;
+  color: rgba(33, 65, 108, 0.2);
+  align-items: center;
+}
+
+.distance-bank svg {
+  margin-right: 2vw;
+}
+
+
+.btn--news {
+  background: #21416C;;
+  border-radius: 1rem;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1.5rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn--news2 {
+  background: #ED1C24;;
+  border-radius: 1rem;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1.5rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+.buttons {
+  flex-direction: row;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
